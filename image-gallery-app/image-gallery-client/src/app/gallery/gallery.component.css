@@ -1,0 +1,10 @@
+.container {
+  display: grid; 
+  width: 100%;
+  /* grid-template-columns: auto auto; */
+  padding: 4% 2%;
+  box-sizing: border-box;
+}
+
+
+

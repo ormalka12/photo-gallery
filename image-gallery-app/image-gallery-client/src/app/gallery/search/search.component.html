@@ -1,0 +1,18 @@
+<div class="row">
+    <div class="col-lg-12">
+      <div class="input-group">
+        <input type="text" [(ngModel)]="searchText" class="form-control" placeholder="Search for image..."
+        aria-describedby="search-text" autofocus (keypress)="toggleDropDown()">
+        <span class="input-group-btn">
+          <button mat-raised-button color="accent" type="button" (click)="onSearch(searchText)">Search</button>
+        </span>
+      </div>
+      <ul *ngIf="showDropDown" class="list-group list-group-flush">
+        <li class="list-group-item" *ngFor="let line of descriptionArray | appFilter: searchText"
+        appHighlight [searchedWord]="searchText" [content]="line"  
+        [classToApply]="'font-weight-bold'" (click)="onItemClick(line)">
+        {{line}}
+      </li>
+      </ul>
+    </div>
+  </div>

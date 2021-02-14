@@ -1,0 +1,13 @@
+
+  <ng-container *ngIf="loadedImages">
+    <app-search (searchRequest)="onSearch($event)" [loadedImages]="loadedImages"></app-search>
+    <div *ngIf="!isFetching" class="container">
+    <app-image (imageRemoved)="onImageRemoved()" *ngFor="let image of loadedImages"
+    [image]="image"></app-image>
+    </div>
+    <app-spinner *ngIf="isFetching"></app-spinner>
+  </ng-container>
+
+
+
+

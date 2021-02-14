@@ -1,0 +1,13 @@
+.container {
+position: relative;
+text-align:center;
+margin: 0 auto;
+width: 100%;
+}
+.h1{
+padding-left: 15px;
+}
+.alert alert-danger{
+padding-left: 15px;  
+}
+
