@@ -37,16 +37,6 @@ app.post('/update', async (req, res) => {
     res.status(200).send(JSON.stringify('Picture successfully updated'));
   });
 
-  app.post('/search', async (req, res) => {
-    const listOfImages = await search(req.body.string);
-    res.status(200).send(JSON.stringify(listOfImages));
-  });
-
-  app.post('/getImage', async (req, res) => {
-    const image = await searchByDescription(req.body.description);
-    res.status(200).send(JSON.stringify(image));
-  });
-
 
 app.use(handleErrors);
 
