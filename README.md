@@ -12,6 +12,6 @@ Upload image form -  Support upload a new image and allow the user to enter a de
 
 <img width="1675" alt="Screen Shot 2021-03-15 at 14 21 53" src="https://user-images.githubusercontent.com/33100991/111152900-f44b5400-8599-11eb-872b-aa2b7d736772.png">
 
-Server side: NodeJs, Express, Mongoose.
+Server side: NodeJS, Express, Mongoose.
 
 Client side: Angular 10
