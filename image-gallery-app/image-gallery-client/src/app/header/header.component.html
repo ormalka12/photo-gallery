@@ -1,14 +1,41 @@
-<nav class="navbar navbar-default" style="background-color: #ff007f;">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <a class="navbar-brand" routerLink="/images" style="color: white;"> Image Gallery</a>
-      </div>
-      <div class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-              <li routerLinkActive="active">
-                  <a routerLink="/upload" style="color: bisque;">Upload</a>
-                </li>
-          </ul>
-      </div>
+<!-- <nav class="navbar navbar-expand-lg navbar-fixed-top" style="background-color: #ff007f;">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+        data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> </button>
+      <a class="navbar-brand" routerLink="/images" style="color: white;"> Image Gallery</a>
     </div>
-  </nav>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li routerLinkActive="active">
+          <a routerLink="/upload" style="color: burlywood;">Upload</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav> -->
+
+<nav class="navbar navbar-default" style="background-color: #ff007f; color:cornsilk">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" routerLink="/images" style="color:cornsilk">Image Gallery</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li routerLinkActive="active">
+          <a routerLink="/upload" style="color: cornsilk;">Upload</a>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
